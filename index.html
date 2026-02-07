@@ -8,17 +8,11 @@
   <title>Karam Sabah - Portfolio</title>
   <meta name="description" content="كرم صباح - مصمم UI/UX ومطور تطبيقات موبايل من الموصل، العراق." />
   <meta name="robots" content="index,follow" />
-
-  <!-- Favicon -->
   <link rel="icon" href="https://d.top4top.io/p_3373v00ec1.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="https://d.top4top.io/p_3373v00ec1.png" />
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
-
-  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
@@ -71,8 +65,6 @@
       animation-duration:1.4s;
     }
     @keyframes spin{to{transform:rotate(360deg)}}
-
-    /* Layout */
     .container{max-width:var(--max); margin:0 auto; padding:22px 16px 70px}
     .header{
       position:sticky; top:0; z-index:50;
@@ -108,7 +100,6 @@
       color:var(--title);
     }
 
-    /* Sections */
     section{scroll-margin-top:90px}
     .card{
       background:var(--card);
@@ -134,7 +125,6 @@
       white-space:nowrap;
     }
 
-    /* Hero */
     .hero{
       padding:28px 0 10px;
     }
@@ -214,7 +204,6 @@
       object-fit:cover;
     }
 
-    /* About */
     .about{
       margin-top:18px;
       padding:22px;
@@ -252,7 +241,6 @@
     .info a{color:rgba(255,255,255,.88); text-decoration:none}
     .info a:hover{color:var(--accent)}
 
-    /* Grid cards */
     .grid{
       display:grid;
       grid-template-columns: repeat(4, 1fr);
@@ -278,7 +266,6 @@
     }
     .mini-card p{margin:0; line-height:1.8; font-size:14px}
 
-    /* Skills */
     .skills{
       padding:18px;
     }
@@ -296,7 +283,6 @@
     .track{height:10px; border-radius:999px; background:rgba(255,255,255,.10); overflow:hidden; margin-top:8px}
     .fill{height:100%; border-radius:999px; background:linear-gradient(90deg, var(--accent), rgba(251,176,64,.55))}
 
-    /* Footer */
     footer{
       margin-top:18px;
       padding:18px;
@@ -323,12 +309,9 @@
 </head>
 
 <body>
-  <!-- Preloader -->
   <div class="preloader" id="preloader" aria-hidden="true">
     <div class="spinner" aria-label="Loading"></div>
   </div>
-
-  <!-- Header -->
   <header class="header">
     <div class="header-inner">
       <a class="brand" href="#home">
@@ -346,7 +329,6 @@
   </header>
 
   <main class="container">
-    <!-- Hero -->
     <section class="hero" id="home">
       <div class="card hero-wrap">
         <div class="hero-content">
@@ -373,13 +355,12 @@
           </div>
 
           <div class="hero-side">
-            <img class="avatar" src="https://l.top4top.io/p_3373e613m6.jpg" alt="Karam Sabah" />
+            <img class="avatar" src="https://b.top4top.io/p_3690sca831.jpeg" alt="Karam Sabah" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About -->
     <section id="about" style="margin-top:14px;">
       <div class="section-title">
         <h2>من أنا</h2>
@@ -418,7 +399,6 @@
       </div>
     </section>
 
-    <!-- Services -->
     <section id="services" style="margin-top:18px;">
       <div class="section-title">
         <h2>خدمات</h2>
@@ -445,7 +425,6 @@
       </div>
     </section>
 
-    <!-- Skills -->
     <section id="skills" style="margin-top:18px;">
       <div class="section-title">
         <h2>مهارات</h2>
@@ -505,7 +484,6 @@
       </div>
     </section>
 
-    <!-- Interests -->
     <section id="interests" style="margin-top:18px;">
       <div class="section-title">
         <h2>الاهتمامات</h2>
@@ -532,7 +510,6 @@
       </div>
     </section>
 
-    <!-- Footer / Contact -->
     <section id="contact" style="margin-top:18px;">
       <div class="section-title">
         <h2>تواصل</h2>
@@ -566,17 +543,14 @@
     </section>
   </main>
 
-  <!-- Typed.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
   <script>
-    // Preloader
     window.addEventListener("load", () => {
       const p = document.getElementById("preloader");
       p.classList.add("hide");
       setTimeout(() => p.remove(), 500);
     });
 
-    // Typed effect (works on GitHub Pages)
     new Typed("#typed", {
       strings: [
         "أطوّر <strong style='color:#fbb040'>تطبيقات إبداعية</strong>.",
@@ -590,7 +564,6 @@
       smartBackspace: true
     });
 
-    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(a=>{
       a.addEventListener("click", (e)=>{
         const id = a.getAttribute("href");
