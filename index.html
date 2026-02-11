@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Karam Sabah - Portfolio</title>
+  <meta name="description" content="كرم صباح - مصمم UI/UX ومطور تطبيقات موبايل من الموصل، العراق." />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="icon" href="https://d.top4top.io/p_3373v00ec1.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="https://d.top4top.io/p_3373v00ec1.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="bg-anim" aria-hidden="true">
+    <canvas id="bgCanvas"></canvas>
+  </div>
+
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="spinner" aria-label="Loading"></div>
+  </div>
+
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="#home">
+        <img src="https://d.top4top.io/p_3373v00ec1.png" alt="Karam Sabah Logo" />
+        <strong>Karam Sabah</strong>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">من أنا</a>
+        <a href="#services">خدمات</a>
+        <a href="#skills">مهارات</a>
+        <a href="#works">أعمالي</a>
+        <a href="#interests">اهتمامات</a>
+        <a href="#contact">تواصل معي</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="card hero-wrap">
+        <div class="hero-content">
+          <div>
+            <h1>
+              مرحباً، أنا <strong>كرم صباح</strong><br />
+              مصمم UI/UX ومطور تطبيقات موبايل
+            </h1>
+
+            <p class="sub muted">
+              مقيم في <b class="white">الموصل</b> — العراق
+            </p>
+
+            <div class="typed-line"><span id="typed"></span></div>
+
+            <div class="hero-actions">
+              <a class="btn" href="#contact"><i class="fa-solid fa-paper-plane"></i> تواصل معي</a>
+              <a class="btn ghost" target="_blank" rel="noopener" href="https://www.instagram.com/26cn_/">
+                <i class="fa-brands fa-instagram"></i> حسابي على الانستغرام
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-side">
+            <img class="avatar" src="https://b.top4top.io/p_3690sca831.jpeg" alt="Karam Sabah" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="mt">
+      <div class="section-title">
+        <h2>من أنا</h2>
+        <span class="badge">نبذة مختصرة</span>
+      </div>
+
+      <div class="card about">
+        <div>
+          <img src="https://b.top4top.io/p_3690sca831.jpeg" alt="Karam Sabah Photo" />
+        </div>
+
+        <div>
+          <p>
+            مرحباً! أنا كرم صباح، مصمم تجربة وواجهة مستخدم من العراق — الموصل.
+            لدي خبرة في تصميم وبناء مواقع الويب، كما أنني أعمل على تطوير تطبيقات الجوال.
+            يسعدني التحدث معك عن مشروعك ومساعدتك بتحويله لمنتج احترافي.
+          </p>
+
+          <div class="info">
+            <div class="item"><b>العمر:</b> 24</div>
+            <div class="item"><b>الإقامة:</b> العراق</div>
+            <div class="item"><b>العنوان:</b> الموصل، العراق</div>
+            <div class="item"><b>للعمل المستقل:</b> متاح</div>
+
+            <div class="item">
+              <b>الهاتف:</b>
+              <a href="tel:+9647731012028">+964 773 101 2028</a>
+            </div>
+
+            <div class="item">
+              <b>البريد:</b>
+              <a href="mailto:karm.24be157@student.uomosul.edu.iq">karm.24be157@student.uomosul.edu.iq</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="mt">
+      <div class="section-title">
+        <h2>خدمات</h2>
+        <span class="badge">ما أقدمه</span>
+      </div>
+
+      <div class="grid">
+        <div class="mini-card">
+          <h3>تطوير الويب</h3>
+          <p>مواقع حديثة ومتجاوبة تساعدك على تحقيق أهدافك التسويقية بشكل احترافي.</p>
+        </div>
+        <div class="mini-card">
+          <h3>تطوير الألعاب</h3>
+          <p>تطوير ألعاب Android و iOS بأفكار فريدة وتجربة مستخدم ممتعة.</p>
+        </div>
+        <div class="mini-card">
+          <h3>تطبيقات الدسكتوب</h3>
+          <p>تطبيقات سطح مكتب بتقنيات حديثة لتلبية احتياجات الأعمال.</p>
+        </div>
+        <div class="mini-card">
+          <h3>تطبيق أندرويد</h3>
+          <p>تطبيقات موبايل سريعة وخفيفة مع واجهات جميلة وميزات عملية.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="mt">
+      <div class="section-title">
+        <h2>مهارات</h2>
+        <span class="badge">لغات + برمجة</span>
+      </div>
+
+      <div class="card skills">
+        <div class="skill-row">
+          <div class="skill-box">
+            <h3>مهارات اللغات</h3>
+
+            <div class="bar">
+              <div class="top"><span>العربية</span><span>100%</span></div>
+              <div class="track"><div class="fill" style="width:100%"></div></div>
+            </div>
+
+            <div class="bar">
+              <div class="top"><span>English</span><span>75%</span></div>
+              <div class="track"><div class="fill" style="width:75%"></div></div>
+            </div>
+
+            <div class="bar">
+              <div class="top"><span>التركمانية</span><span>100%</span></div>
+              <div class="track"><div class="fill" style="width:100%"></div></div>
+            </div>
+
+            <div class="bar" style="margin-bottom:0;">
+              <div class="top"><span>التركية</span><span>95%</span></div>
+              <div class="track"><div class="fill" style="width:95%"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>مهارات البرمجة</h3>
+
+            <div class="bar">
+              <div class="top"><span>Flutter</span><span>90%</span></div>
+              <div class="track"><div class="fill" style="width:90%"></div></div>
+            </div>
+
+            <div class="bar">
+              <div class="top"><span>HTML / CSS</span><span>85%</span></div>
+              <div class="track"><div class="fill" style="width:85%"></div></div>
+            </div>
+
+            <div class="bar">
+              <div class="top"><span>Python</span><span>80%</span></div>
+              <div class="track"><div class="fill" style="width:80%"></div></div>
+            </div>
+
+            <div class="bar" style="margin-bottom:0;">
+              <div class="top"><span>SQL</span><span>75%</span></div>
+              <div class="track"><div class="fill" style="width:75%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works" class="mt">
+      <div class="section-title">
+        <h2>أعمالي</h2>
+        <span class="badge">اضغط لعرض التفاصيل</span>
+      </div>
+
+      <div class="grid" id="worksGrid" aria-live="polite"></div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section id="interests" class="mt">
+      <div class="section-title">
+        <h2>الاهتمامات</h2>
+        <span class="badge">هواياتي</span>
+      </div>
+
+      <div class="grid">
+        <div class="mini-card">
+          <h3>⚽ كرة القدم</h3>
+          <p>رياضة جماعية سريعة الإيقاع تتطلب مهارات وتعاون واستراتيجية.</p>
+        </div>
+        <div class="mini-card">
+          <h3>⛺ التخييم</h3>
+          <p>تجربة جميلة للهروب من صخب الحياة والتواصل مع الطبيعة.</p>
+        </div>
+        <div class="mini-card">
+          <h3>🎮 الألعاب الإلكترونية</h3>
+          <p>هواية ممتعة تشمل أنواعاً متعددة من الألعاب والمنافسات.</p>
+        </div>
+        <div class="mini-card">
+          <h3>✈️ السفر</h3>
+          <p>استكشاف أماكن وثقافات جديدة وصناعة ذكريات لا تُنسى.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt">
+      <div class="section-title">
+        <h2>تواصل معي</h2>
+        <span class="badge">واتساب</span>
+      </div>
+
+      <footer class="card contact">
+        <p class="muted" style="margin:0 0 10px; line-height:1.9">
+          للتواصل السريع عبر واتساب:
+        </p>
+
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://wa.me/9647731012028?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%83%D8%B1%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9.">
+          <i class="fa-brands fa-whatsapp"></i> تواصل واتساب
+        </a>
+      </footer>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

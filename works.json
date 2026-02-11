@@ -1,0 +1,20 @@
+[
+  {
+    "title": "تطبيق مطعم مع واجهة مستخدم جذابة",
+    "description": "تصميم واجهة مستخدم حديثة لتطبيق مطعم، مع التركيز على تجربة المستخدم وسهولة التنقل.",
+    "images": [
+      "images/simulator_screenshot_2751AE50-A5B6-4599-8255-AB196EDD94AA.png",
+      "images/simulator_screenshot_AE69B2A7-B678-48C7-A933-979B645FF927.png",
+      "images/simulator_screenshot_F60EE191-CC11-4652-A149-F7976F2D6400.png"
+    ]
+  },
+  {
+    "title": "تصميم UI/UX لمتجر",
+    "description": "تصميم كامل لتجربة متجر إلكتروني: ألوان، بطاقات، وتدفق شاشات.",
+    "images": [
+      "images/simulator_screenshot_2751AE50-A5B6-4599-8255-AB196EDD94AA.png",
+      "images/simulator_screenshot_AE69B2A7-B678-48C7-A933-979B645FF927.png",
+      "images/simulator_screenshot_F60EE191-CC11-4652-A149-F7976F2D6400.png"
+    ]
+  }
+]

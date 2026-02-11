@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>تفاصيل العمل - Karam Sabah</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="bg-anim" aria-hidden="true">
+    <canvas id="bgCanvas"></canvas>
+  </div>
+
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="./index.html#works">
+        <img src="https://d.top4top.io/p_3373v00ec1.png" alt="Karam Sabah Logo" />
+        <strong>Karam Sabah</strong>
+      </a>
+
+      <nav class="nav" aria-label="Secondary">
+        <a href="./index.html#works"><i class="fa-solid fa-arrow-right"></i> رجوع</a>
+        <a href="./index.html#contact"><i class="fa-brands fa-whatsapp"></i> تواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="mt">
+      <div class="section-title">
+        <h2 id="workTitle">العمل</h2>
+        <span class="badge">معرض</span>
+      </div>
+
+      <div class="card work-page">
+        <div class="work-main">
+          <div class="work-viewer">
+            <img id="mainImg" class="work-viewer-img" alt="Work image" />
+            <button id="zoomBtn" class="zoom-btn" type="button" aria-label="تكبير الصورة">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </button>
+          </div>
+
+          <div class="work-meta">
+            <p id="workDesc" class="work-desc"></p>
+            <div class="work-actions">
+              <a class="btn ghost" href="./index.html#works"><i class="fa-solid fa-arrow-right"></i> رجوع</a>
+              <a class="btn" target="_blank" rel="noopener"
+                 href="https://wa.me/9647731012028?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%83%D8%B1%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%87%D8%B0%D8%A7%20%D8%A7%D9%84%D8%B9%D9%85%D9%84.">
+                <i class="fa-brands fa-whatsapp"></i> تواصل واتساب
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="thumbs-wrap">
+          <div id="thumbs" class="thumbs" aria-label="صور العمل"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lbClose" class="lb-close" type="button" aria-label="إغلاق">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <button id="lbPrev" class="lb-nav lb-prev" type="button" aria-label="السابق">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <img id="lbImg" class="lb-img" alt="Preview" />
+
+    <button id="lbNext" class="lb-nav lb-next" type="button" aria-label="التالي">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
